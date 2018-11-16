@@ -1,6 +1,9 @@
 title: Sparse Matricies
-date: 2018-11-15 14:44:30
-tags:
+tags: []
+categories:
+  - [CS]
+  - [Math]
+date: 2018-11-15 14:44:00
 ---
 There are many situations where a very large matrix is necessary, conviently there are many times that this matrix is a sparse matrix. Inorder to store and operate on large sparce matricies we utilize new systems of data storage that minimize the memory consumed by the storage of an extreamly large space matrix.
 
