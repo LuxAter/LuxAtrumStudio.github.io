@@ -80,4 +80,3 @@ theme: icarus
 deploy:
   type: git
   repo: https://github.com/LuxAtrumStudio/LuxAtrumStudio.github.io
-  branch: gh-pages
