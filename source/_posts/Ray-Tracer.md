@@ -1,6 +1,7 @@
 title: Ray Tracer
 author: Arden Rasmussen
-tags: []
+tags:
+  - C++
 categories:
   - CS
   - Graphics
@@ -10,7 +11,7 @@ date: 2018-04-29 21:52:00
 This ray tracer implements the basis of a ray tracing rendering engine in C++. It is posible to render still images, or sequences of images. Multithreading has also been implemented allowing for significantly faster render times.
 
 
-[![GitHub Link](https://img.shields.io/badge/Github-Ray_Tracer-blue.svg?style=for-the-badge)](https://github.com/LuxAtrumStudio/RayTracer)
+[![GitHub Link](https://img.shields.io/badge/Github-Ray_Tracer-blue.svg?style=for-the-badge)](https://github.com/LuxAtrumStudio/RayTracer) ![](https://img.shields.io/github/repo-size/LuxAtrumStudio/RayTracer.svg?style=for-the-badge)
 
 
 <!-- more -->
