@@ -18,3 +18,19 @@ The program quickly scans all the files in a directory, and if the flag ``-r`` i
 Using the files types it reads through each file, keeping track of the lines of code, and the lines of comments, and it ignores the blank lines. Finally it displays a table of the acquired data, and a bar graph representing the percentages that each language represents in the project.
 
 Currently there is support for 42 different languages.
+
+|           |              |             |        |                  |
+| ---       | ---          | ---         | ---    | ---              |
+| Ada       | CoffeeScript | J           | Perl   | Text             |
+| AsciiDoc  | Common Lisp  | JSON        | Python | TypeScript       |
+| Assembly  | Cuda         | Java        | R      | VimScript        |
+| Bash      | D            | JavaScript  | Ruby   | Web Assembly     |
+| Brainfuck | Diff         | LLVM        | Rust   | YAML             |
+| C         | E            | Less        | SQL    | Zsh              |
+| C#        | Emacs Lisp   | Lex         | SVG    | reStructuredText |
+| C++       | F#           | Lua         | Sage   |                  |
+| CMake     | Fish         | M           | Sass   |                  |
+| COBOL     | Fortran      | Makefile    | Scala  |                  |
+| CSS       | GLSL         | Markdown    | Shell  |                  |
+| CSV       | Go           | Objective-C | Swift  |                  |
+| Clojure   | HTML         | OpenCL      | TeX    |                  |

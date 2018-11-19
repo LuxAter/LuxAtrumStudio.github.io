@@ -41,19 +41,11 @@ The currently implemented problems from project Euler are problems one through t
 
 The currently implemented languages are the following
 
-* Ada
-* Bash
-* C
-* C++
-* C#
-* Fortran
-* F#
-* Go
-* JavaScript
-* Common Lisp
-* Lua
-* Perl
-* Python
-* R
-* Ruby
-* Rust
+|        |      |            |
+| ---    | ---  | ---        |
+| Ada    | Bash | C          |
+| C++    | C#   | Fortan     |
+| F#     | Go   | JavaScript |
+| Lisp   | Lua  | Perl       |
+| Python | R    | Ruby       |
+| Rust   |      |            |
