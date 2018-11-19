@@ -1,20 +1,21 @@
 title: Estl
 author: Arden Rasmussen
 tags:
-  - C++
+  - Cpp
+  - ''
 categories:
   - CS
 thumbnail: /gallery/thumbnails/estl.png
 date: 2018-09-12 10:03:00
 ---
-**ESTL** is a set of header files that can be used to add advanced utilities to C++ code. The header files each implement a new utility that can be easily included into any project.
+**ESTL** is a set of header files that can be used to add advanced utilities to C++ code. The header files each implement a new utility that can be included into any project.
 
 [![GitHub Link](https://img.shields.io/badge/Github-Estl-blue.svg?style=for-the-badge)](https://github.com/LuxAtrumStudio/estl) ![](https://img.shields.io/github/repo-size/LuxAtrumStudio/estl.svg?style=for-the-badge)
 
 
 <!-- more -->
 
-There are several currently implemented header files that are described below
+There are several available implemented header files that are described below
 
 ## ArgParse ##
 
@@ -22,7 +23,7 @@ There are several currently implemented header files that are described below
 #include<estl/argparse.hpp>
 ```
 
-This file is an implementation of a highly extendable argument parsing system. The implemented syntax is similar to that of Pythons argparse module. The base class will generate help displays that list all posible arguments. There is currently support for arguments that set flags, or assigning variables of most base types (``bool``, ``char``, ``int``, ``double``, ``string``, or a list of any of those).
+This file is an implementation of a highly extendable argument parsing system.  The implemented syntax is similar to that of Pythons argparse module. The base class will generate help displays that list all possible arguments. There is currently support for arguments that set flags, or assigning variables of most base types (``bool``, ``char``, ``int``, ``double``, ``string``, or a list of any of those).
 
 ## Basic ##
 
@@ -30,8 +31,7 @@ This file is an implementation of a highly extendable argument parsing system. T
 #include<estl/basic/basic.hpp>
 ```
 
-The *basic* sub folder implements a minimialized alternatives to some of the larger classes. Including ``Matrix``, ``Vector``, and ``Format``. Since each of these are fairly complex, this *basic* implementation removes much of the extendability, but provides a much larger boost in speed, and simplicity.
-
+The *basic* sub folder implements a minimized alternatives to some of the larger classes. Including ``Matrix``, ``Vector``, and ``Format``. Since each of these are fairly complex, this *basic* implementation removes much of the extend ability, but provides a much larger boost in speed, and simplicity.
 
 ## Format ##
 
@@ -39,7 +39,7 @@ The *basic* sub folder implements a minimialized alternatives to some of the lar
 #include<estl/format.hpp>
 ```
 
-This file implements a python like string formating engine, allowing for the use of printf like utility without requiering character buffers. This also extends that utility, by allowing  the use of overloaded operators. By passing a custom ``class`` or ``struct`` the format of that object will first be attempted by calling a member funciton of that object called ``format``, if that fills, then it will attempt to use ``printf`` type formating, and finaly that system will resort to using ``ostream`` formatting. Through this method, any object or type can be cleanly formated, and provide a string containing the formated text.
+This file implements a python like string formatting engine, allowing for the use of printf like utility without requiring character buffers. This also extends that utility, by allowing  the use of overloaded operators. By passing a custom ``class`` or ``struct`` the format of that object will first be attempted by calling a member function of that object called ``format``, if that fills, then it will attempt to use ``printf`` type formatting, and finally that system will resort to using ``ostream`` formatting. Through this method, any object or type can be cleanly formatted, and provide a string containing the formatted text.
 
 ## Fuzz ##
 
@@ -47,7 +47,7 @@ This file implements a python like string formating engine, allowing for the use
 #include<estl/fuzz.hpp>
 ```
 
-The *fuzz* file implements an efficient stirng based fuzzy finder. Utilizing either Manhattin distance or Levenshtein distance calculations, the system determins the closest ``n`` matches to the input string in a vector of strings. It then returns that array sorted in order of closses distance.
+The *fuzz* file implements an efficient string based fuzzy finder. Utilizing either Manhattan distance or Levenshtein distance calculations, the system determines the closest ``n`` matches to the input string in a vector of strings. It then returns that array sorted in order of closeness distance.
 
 ## Json ##
 
@@ -55,7 +55,7 @@ The *fuzz* file implements an efficient stirng based fuzzy finder. Utilizing eit
 #include<estl/json.hpp>
 ```
 
-The *json* file implements reading/writting of ``.json`` files from C++, aswell as easy manipulation of the json objects, and pretty printing. **Note** A major rewrite of this module is in development.
+The *json* file implements reading/writing of ``.json`` files from C++, as well as easy manipulation of the json objects, and pretty printing. **Note** A major rewrite of this module is in development.
 
 ## Logger ##
 
@@ -63,7 +63,7 @@ The *json* file implements reading/writting of ``.json`` files from C++, aswell 
 #include<estl/logger.hpp>
 ```
 
-The logging system implemented allows for extream control over a easy to use logging system. The general format for a logger can be specified, then each call to a logger uses ``printf`` formating. The collection of call functions utilize macros to determin the source file, function name, and line number that the log message was called from, allowing significantly improved diagnoses of loged messages. There are five different logger bases, then the default logger can consist of any collection of these.
+The logging system implemented allows for extreme control over a easy to use logging system. The general format for a logger can be specified, then each call to a logger uses ``printf`` formatting. The collection of call functions utilize macros to determine the source file, function name, and line number that the log message was called from, allowing significantly improved diagnoses of logged messages. There are five different logger bases, then the default logger can consist of any collection of these.
 
 * ConsoleLogger
 * FileLogger
@@ -79,7 +79,7 @@ More detail can be found in the documentation.
 #include<estl/matrix.hpp>
 ```
 
-The *matrix* fiel is primarily to provide a mathematical matrix object. Useing templated arguments, the matrix class provides all common mathematical matrix operations, utilizing the templated types commands. **Note** that sparce matrix optimizations have not been implemented.
+The *matrix* file is primarily to provide a mathematical matrix object. Using templated arguments, the matrix class provides all common mathematical matrix operations, utilizing the templated types commands. **Note** that sparse matrix optimizations have not been implemented.
 
 ## Stream ##
 
@@ -98,7 +98,7 @@ The *stream* file is to provide an extended implementation of ``printf`` that ut
 The *tree* class implements an arbitrary tree data structure. It provides easy ways to add or remove children. There are three different iterators that can be used for traversing the tree:
 
 * depth_iterator
-* sibling_itrator
+* sibling_iterator
 * leaf_iterator
 
 The class also provides methods for printing the tree.
@@ -109,7 +109,7 @@ The class also provides methods for printing the tree.
 #include<estl/variable.hpp>
 ```
 
-This file provides a general variable which is represented as a union of most fundamental C++ types, aswell as vectors of those types, including
+This file provides a general variable which is represented as a union of most fundamental C++ types, as well as vectors of those types, including
 
 * ``bool``
 * ``char``
