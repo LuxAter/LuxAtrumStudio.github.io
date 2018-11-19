@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+<title>Estl - Arden Rasmussen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+    <meta name="description" content="ESTL is a set of header files that can be used to add advanced utilities to C++ code. The header files each implement a new utility that can be included into any project.">
+<meta name="keywords" content="Cpp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Estl">
+<meta property="og:url" content="http://yoursite.com/2018/09/12/Estl/index.html">
+<meta property="og:site_name" content="Arden Rasmussen">
+<meta property="og:description" content="ESTL is a set of header files that can be used to add advanced utilities to C++ code. The header files each implement a new utility that can be included into any project.">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://img.shields.io/badge/Github-Estl-blue.svg?style=for-the-badge">
+<meta property="og:image" content="https://img.shields.io/github/repo-size/LuxAtrumStudio/estl.svg?style=for-the-badge">
+<meta property="og:updated_time" content="2018-11-19T05:21:44.425Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Estl">
+<meta name="twitter:description" content="ESTL is a set of header files that can be used to add advanced utilities to C++ code. The header files each implement a new utility that can be included into any project.">
+<meta name="twitter:image" content="https://img.shields.io/badge/Github-Estl-blue.svg?style=for-the-badge">
+
+
+
+
+
+<link rel="icon" href="/images/test.png">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
+
+
+    
+    
+    
+    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+    
+
+    
+    
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+    
+
+    
+    
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+
+    
+    
+    
+    
+
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/test.png" alt="Estl" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/">Home</a>
+                
+                <a class="navbar-item" href="/archives">Archives</a>
+                
+                <a class="navbar-item" href="/categories">Categories</a>
+                
+                <a class="navbar-item" href="/tags">Tags</a>
+                
+                <a class="navbar-item" href="/About/index.html">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    
+                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/LuxAtrumStudio">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="Search" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="/gallery/thumbnails/estl.png" alt="Estl">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-09-12T17:03:00.000Z">2018-09-12</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/CS/">CS</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 minutes read (About 742 words)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                Estl
+            
+        </h1>
+        <div class="content">
+            <p><strong>ESTL</strong> is a set of header files that can be used to add advanced utilities to C++ code. The header files each implement a new utility that can be included into any project.</p>
+<p><a href="https://github.com/LuxAtrumStudio/estl" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Github-Estl-blue.svg?style=for-the-badge" alt="GitHub Link"></a> <img src="https://img.shields.io/github/repo-size/LuxAtrumStudio/estl.svg?style=for-the-badge" alt=""></p>
+<a id="more"></a>
+<p>There are several available implemented header files that are described below</p>
+<h2 id="ArgParse"><a href="#ArgParse" class="headerlink" title="ArgParse"></a>ArgParse</h2><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;estl/argparse.hpp&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>This file is an implementation of a highly extendable argument parsing system.  The implemented syntax is similar to that of Pythons argparse module. The base class will generate help displays that list all possible arguments. There is currently support for arguments that set flags, or assigning variables of most base types (<code>bool</code>, <code>char</code>, <code>int</code>, <code>double</code>, <code>string</code>, or a list of any of those).</p>
+<h2 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h2><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;estl/basic/basic.hpp&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>The <em>basic</em> sub folder implements a minimized alternatives to some of the larger classes. Including <code>Matrix</code>, <code>Vector</code>, and <code>Format</code>. Since each of these are fairly complex, this <em>basic</em> implementation removes much of the extend ability, but provides a much larger boost in speed, and simplicity.</p>
+<h2 id="Format"><a href="#Format" class="headerlink" title="Format"></a>Format</h2><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;estl/format.hpp&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>This file implements a python like string formatting engine, allowing for the use of printf like utility without requiring character buffers. This also extends that utility, by allowing  the use of overloaded operators. By passing a custom <code>class</code> or <code>struct</code> the format of that object will first be attempted by calling a member function of that object called <code>format</code>, if that fills, then it will attempt to use <code>printf</code> type formatting, and finally that system will resort to using <code>ostream</code> formatting. Through this method, any object or type can be cleanly formatted, and provide a string containing the formatted text.</p>
+<h2 id="Fuzz"><a href="#Fuzz" class="headerlink" title="Fuzz"></a>Fuzz</h2><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;estl/fuzz.hpp&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>The <em>fuzz</em> file implements an efficient string based fuzzy finder. Utilizing either Manhattan distance or Levenshtein distance calculations, the system determines the closest <code>n</code> matches to the input string in a vector of strings. It then returns that array sorted in order of closeness distance.</p>
+<h2 id="Json"><a href="#Json" class="headerlink" title="Json"></a>Json</h2><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;estl/json.hpp&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>The <em>json</em> file implements reading/writing of <code>.json</code> files from C++, as well as easy manipulation of the json objects, and pretty printing. <strong>Note</strong> A major rewrite of this module is in development.</p>
+<h2 id="Logger"><a href="#Logger" class="headerlink" title="Logger"></a>Logger</h2><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;estl/logger.hpp&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>The logging system implemented allows for extreme control over a easy to use logging system. The general format for a logger can be specified, then each call to a logger uses <code>printf</code> formatting. The collection of call functions utilize macros to determine the source file, function name, and line number that the log message was called from, allowing significantly improved diagnoses of logged messages. There are five different logger bases, then the default logger can consist of any collection of these.</p>
+<ul>
+<li>ConsoleLogger</li>
+<li>FileLogger</li>
+<li>DailyLogger</li>
+<li>CounterLogger</li>
+<li>StreamLogger</li>
+</ul>
+<p>More detail can be found in the documentation.</p>
+<h2 id="Matrix"><a href="#Matrix" class="headerlink" title="Matrix"></a>Matrix</h2><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;estl/matrix.hpp&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>The <em>matrix</em> file is primarily to provide a mathematical matrix object. Using templated arguments, the matrix class provides all common mathematical matrix operations, utilizing the templated types commands. <strong>Note</strong> that sparse matrix optimizations have not been implemented.</p>
+<h2 id="Stream"><a href="#Stream" class="headerlink" title="Stream"></a>Stream</h2><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;estl/stream.hpp&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>The <em>stream</em> file is to provide an extended implementation of <code>printf</code> that utilizes C++ streams. This is a smaller version of the <em>format</em> file. This again implements the use of stream operators, but does not utilize the more advanced features that are available in the <em>format</em> file.</p>
+<h2 id="Tree"><a href="#Tree" class="headerlink" title="Tree"></a>Tree</h2><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;estl/tree.hpp&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>The <em>tree</em> class implements an arbitrary tree data structure. It provides easy ways to add or remove children. There are three different iterators that can be used for traversing the tree:</p>
+<ul>
+<li>depth_iterator</li>
+<li>sibling_iterator</li>
+<li>leaf_iterator</li>
+</ul>
+<p>The class also provides methods for printing the tree.</p>
+<h2 id="Variable"><a href="#Variable" class="headerlink" title="Variable"></a>Variable</h2><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;estl/variable.hpp&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>This file provides a general variable which is represented as a union of most fundamental C++ types, as well as vectors of those types, including</p>
+<ul>
+<li><code>bool</code></li>
+<li><code>char</code></li>
+<li><code>signed char</code></li>
+<li><code>unsigned char</code></li>
+<li><code>signed short int</code></li>
+<li><code>unsigned short int</code></li>
+<li><code>signed int</code></li>
+<li><code>unsigned int</code></li>
+<li><code>signed long int</code></li>
+<li><code>unsigned long int</code></li>
+<li><code>signed long long int</code></li>
+<li><code>unsigned long long int</code></li>
+<li><code>float</code></li>
+<li><code>double</code></li>
+<li><code>long double</code></li>
+<li><code>std::string</code></li>
+<li><code>const char*</code></li>
+</ul>
+<h2 id="Variadic"><a href="#Variadic" class="headerlink" title="Variadic"></a>Variadic</h2><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;estl/variadic.hpp&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>The <em>variadic</em> files implements utility functions for handling variadic packed template arguments. It provides methods for unpacking arguments into <code>vector</code>, <code>tuple</code>, and <code>vector&lt;any&gt;</code>, allowing simple access of packed arguments.</p>
+<h2 id="Vector"><a href="#Vector" class="headerlink" title="Vector"></a>Vector</h2><figure class="highlight cpp hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;estl/vector.hpp&gt;</span></span></span><br></pre></td></tr></table></figure>
+<p>The <em>vector</em> file is a mathematical vector object. Using templated arguments, the vector class provides most common mathematical vector operations, utilizing the templated types commands.</p>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/Cpp/">Cpp</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2018/09/19/Lexici/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Lexici</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2018/06/21/Loc/">
+                <span class="level-item">Loc</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+                
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered">
+                <div>
+                    <img class="image is-128x128 has-mb-6" src="/images/test.png" alt="Arden Rasmussen">
+                    
+                    <p class="is-size-4 is-block">
+                        Arden Rasmussen
+                    </p>
+                    
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>Lewis &amp; Clark College</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Posts
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        5
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Categories
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        3
+                    </p>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        Tags
+                    </p>
+                    <p class="title has-text-weight-normal">
+                        16
+                    </p>
+                </div>
+            </div>
+        </nav>
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="http://github.com/LuxAtrumStudio">
+                Follow</a>
+        </div>
+        
+        
+    </div>
+</div>
+    
+        
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                Categories
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/CS/">
+            <span class="level-start">
+                <span class="level-item">CS</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">5</span>
+            </span>
+        </a><ul><li>
+        <a class="level is-marginless" href="/categories/CS/Graphics/">
+            <span class="level-start">
+                <span class="level-item">Graphics</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/CS/Web/">
+            <span class="level-start">
+                <span class="level-item">Web</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li></ul></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Tag Cloud
+        </h3>
+        <a href="/tags/Ada/" style="font-size: 10px;">Ada</a> <a href="/tags/C/" style="font-size: 10px;">C</a> <a href="/tags/Cpp/" style="font-size: 20px;">Cpp</a> <a href="/tags/Csharp/" style="font-size: 10px;">Csharp</a> <a href="/tags/Fortran/" style="font-size: 10px;">Fortran</a> <a href="/tags/Fsharp/" style="font-size: 10px;">Fsharp</a> <a href="/tags/Go/" style="font-size: 10px;">Go</a> <a href="/tags/Javascript/" style="font-size: 15px;">Javascript</a> <a href="/tags/Lisp/" style="font-size: 10px;">Lisp</a> <a href="/tags/Lua/" style="font-size: 10px;">Lua</a> <a href="/tags/Perl/" style="font-size: 10px;">Perl</a> <a href="/tags/Python/" style="font-size: 20px;">Python</a> <a href="/tags/R/" style="font-size: 10px;">R</a> <a href="/tags/Ruby/" style="font-size: 10px;">Ruby</a> <a href="/tags/Rust/" style="font-size: 10px;">Rust</a> <a href="/tags/Shell/" style="font-size: 10px;">Shell</a>
+    </div>
+</div>
+
+    
+    
+        <div class="card card-transparent is-hidden-widescreen">
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Archives
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/09/">
+                <span class="level-start">
+                    <span class="level-item">September 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/06/">
+                <span class="level-start">
+                    <span class="level-item">June 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/05/">
+                <span class="level-start">
+                    <span class="level-item">May 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/04/">
+                <span class="level-start">
+                    <span class="level-item">April 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right">
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            Archives
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/09/">
+                <span class="level-start">
+                    <span class="level-item">September 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/06/">
+                <span class="level-start">
+                    <span class="level-item">June 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/05/">
+                <span class="level-start">
+                    <span class="level-item">May 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2018/04/">
+                <span class="level-start">
+                    <span class="level-item">April 2018</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/test.png" alt="Estl" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2018 Arden Rasmussen&nbsp;
+                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a href="http://github.com/ppoffice/hexo-theme-icarus">Icarus</a>
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="http://github.com/LuxAtrumStudio">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("en");</script>
+
+
+    
+    
+    
+    <script src="/js/animation.js"></script>
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
+    
+
+    
+    
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {matchFontHeight: false},
+        SVG: {matchFontHeight: false},
+        CommonHTML: {matchFontHeight: false}
+    });
+});
+</script>
+
+    
+    
+
+<a id="back-to-top" title="Back to Top" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+</body>
+</html>
